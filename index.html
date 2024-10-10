@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+        }
+        .hidden-message {
+            display: none;
+            margin-top: 20px;
+            font-size: 24px;
+            color: #ff69b4;
+        }
+        button {
+            font-size: 18px;
+            padding: 10px 20px;
+            cursor: pointer;
+            background-color: #48d1cc;
+            border: none;
+            color: white;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #20b2aa;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button onclick="showMessage()">Нажми</button>
+        <div id="message" class="hidden-message">С днём рождения! Я тебя люблю!</div>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById('message').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
